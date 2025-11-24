@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projects - Aman Kumar" />
+    <title>Projects - Aman Kumar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">AK</a>
+        <button class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="page-header">
+      <div class="container">
+        <h1>My Projects</h1>
+        <p>Explore my portfolio of personal and professional projects</p>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <div class="container">
+        <div class="projects-grid">
+          <!-- Project 1: Job Search Portal -->
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="project-content">
+              <h3>Job Search Portal</h3>
+              <p class="project-description">
+                Built a robust job search platform using Spring Boot 3.4, Java
+                17, PostgreSQL, and Redis. Features secure authentication,
+                multi-user access for job seekers, employers, and admins, with
+                advanced filtering and efficient pagination.
+              </p>
+              <ul class="project-features">
+                <li>
+                  <i class="fas fa-check"></i> Secure RESTful APIs with JWT
+                  authentication
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Role-based access control (RBAC)
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Multi-user access for job
+                  seekers, employers, and admins
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Advanced job filtering by title,
+                  location, and company
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Efficient pagination for
+                  responsive data handling
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Spring Validation for exception
+                  handling
+                </li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-badge">Spring Boot</span>
+                <span class="tech-badge">Java 17</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">Redis</span>
+                <span class="tech-badge">JWT</span>
+                <span class="tech-badge">Spring Security</span>
+                <span class="tech-badge">Spring Data JPA</span>
+                <span class="tech-badge">Maven</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/AK9773/job-search-portal"
+                  target="_blank"
+                  class="btn btn-primary"
+                >
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: E-Commerce Application -->
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce Web Application</h3>
+              <p class="project-description">
+                Built a full-featured e-commerce web application from scratch
+                using the MERN stack. Implemented secure user authentication,
+                product catalogue management, shopping cart functionality, and
+                checkout flows with responsive design.
+              </p>
+              <ul class="project-features">
+                <li>
+                  <i class="fas fa-check"></i> Secure user authentication and
+                  authorization with JWT
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Complete product catalogue
+                  management
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Shopping cart and checkout flows
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Responsive design for all devices
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> State management with Redux
+                </li>
+                <li><i class="fas fa-check"></i> RESTful API architecture</li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">Express.js</span>
+                <span class="tech-badge">React.js</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">JWT</span>
+                <span class="tech-badge">Redux</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/AK9773/e-commerce-app-using-MERN"
+                  target="_blank"
+                  class="btn btn-primary"
+                >
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Interested in Working Together?</h2>
+        <p>Let's discuss your project and see how I can help</p>
+        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Aman Kumar. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
