@@ -2,6 +2,25 @@
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
 
+// Add mobile toggle behavior
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    const spans = menuToggle.querySelectorAll("span");
+    if (spans.length === 3) {
+      if (navMenu.classList.contains("active")) {
+        spans[0].style.transform = "translateY(8px) rotate(45deg)";
+        spans[1].style.opacity = "0";
+        spans[2].style.transform = "translateY(-8px) rotate(-45deg)";
+      } else {
+        spans[0].style.transform = "none";
+        spans[1].style.opacity = "1";
+        spans[2].style.transform = "none";
+      }
+    }
+  });
+}
+
 // Theme Toggle: initialize and wire up
 const themeToggle = document.getElementById("themeToggle");
 
